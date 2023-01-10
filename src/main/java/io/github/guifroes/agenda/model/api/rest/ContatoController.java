@@ -47,7 +47,7 @@ public class ContatoController {
             repository.save(c);
         });
     }
-    /* dominio/api/contatos/1/foto */
+
     @PutMapping("{id}/foto")
     public byte[] addPhoto(@PathVariable Integer id,
                            @RequestParam("foto") Part arquivo) {
